@@ -1,4 +1,6 @@
-package edu.ntnu.idatt2003.replaceText;
+package edu.ntnu.idatt2003.replace;
+
+import edu.ntnu.idatt2003.TextCommand;
 
 public class ReplaceTextCommand implements TextCommand {
   String target;
@@ -20,7 +22,7 @@ public class ReplaceTextCommand implements TextCommand {
   }
 
   @Override
-  public String exceute(String text) {
+  public String execute(String text) {
     if (text == null) {
       throw new IllegalArgumentException("text cannot be null");
     }

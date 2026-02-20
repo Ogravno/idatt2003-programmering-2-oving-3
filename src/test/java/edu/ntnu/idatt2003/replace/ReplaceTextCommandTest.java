@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2003.replaceText;
+package edu.ntnu.idatt2003.replace;
 
 import org.junit.jupiter.api.Test;
 
@@ -19,15 +19,17 @@ class ReplaceTextCommandTest {
   }
 
   @Test
-  void exceute() {
+  void execute() {
     String text = "some text some text";
     String target = "some";
     String replacement = "different";
     String expectedResult = "different text different text";
 
-    ReplaceTextCommand replaceNormal =
+    ReplaceTextCommand replaceAll =
         new ReplaceTextCommand(target, replacement);
 
-    assertEquals(expectedResult, replaceNormal.exceute(text));
+    assertEquals(expectedResult, replaceAll.execute(text));
+    assertThrows(IllegalArgumentException.class,
+        () -> replaceAll.execute(null));
   }
 }
