@@ -6,7 +6,7 @@ public class WrapTextCommand implements TextCommand {
   String opening;
   String end;
 
-  WrapTextCommand(String opening, String end) {
+  public WrapTextCommand(String opening, String end) {
     if (opening == null) {
       throw new IllegalArgumentException("opening cannot be null");
     }

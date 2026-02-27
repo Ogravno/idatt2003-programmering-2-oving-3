@@ -6,7 +6,7 @@ public class ReplaceTextCommand implements TextCommand {
   String target;
   String replacement;
 
-  ReplaceTextCommand(String target, String replacement) {
+  public ReplaceTextCommand(String target, String replacement) {
     if (target == null) {
       throw new IllegalArgumentException("target cannot be null");
     }

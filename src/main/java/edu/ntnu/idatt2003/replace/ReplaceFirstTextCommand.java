@@ -1,7 +1,7 @@
 package edu.ntnu.idatt2003.replace;
 
 public class ReplaceFirstTextCommand extends ReplaceTextCommand {
-  ReplaceFirstTextCommand(String target, String replacement) {
+  public ReplaceFirstTextCommand(String target, String replacement) {
     super(target, replacement);
   }
 

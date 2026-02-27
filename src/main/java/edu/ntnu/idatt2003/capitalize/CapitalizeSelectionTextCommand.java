@@ -3,7 +3,7 @@ package edu.ntnu.idatt2003.capitalize;
 public class CapitalizeSelectionTextCommand extends CapitalizeTextCommand {
   private String selection;
 
-  CapitalizeSelectionTextCommand(String selection) {
+  public CapitalizeSelectionTextCommand(String selection) {
     if (selection == null) {
       throw new IllegalArgumentException("selection cannot be null");
     }

@@ -1,7 +1,7 @@
 package edu.ntnu.idatt2003.wrap;
 
 public class WrapLinesTextCommand extends WrapTextCommand {
-  WrapLinesTextCommand(String opening, String end) {
+  public WrapLinesTextCommand(String opening, String end) {
     if (opening == null) {
       throw new IllegalArgumentException("opening cannot be null");
     }
